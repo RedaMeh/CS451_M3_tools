@@ -17,4 +17,4 @@ Put those files in the corresponding directories as indicated.
   takes x (and generates x lines with <id> localhost <port>)  
   x: number of hosts
 # la_run.sh: 
-  doesn't take anything, fetches the hosts and finds their corresponding configs in order to ./run.sh with the right arguments 
+  doesn't take anything, fetches the hosts and finds their corresponding configs in order to ./run.sh with the right arguments and CTRL+C stops all processes
