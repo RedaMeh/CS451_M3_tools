@@ -43,8 +43,8 @@ for i in range(1, x + 1):
         # Proposal lines
         for j in range(a):
             # Disjoint range per line (1-based values)
-            start = j * R + 1
-            end = (j + 1) * R
+            start = j * R
+            end = ((j + 1) * R) - 1
             line_range = list(range(start, end + 1))
 
             if y == 0:
