@@ -2,11 +2,12 @@
 These are some tools that I made to test more easily different scenarios a varying number of proposals and hosts, with a comparator to check that the outputs are coherent.  
 Put those files in the corresponding directories as indicated.
 # latticeConfigProducer.py: 
-  takes x y a b c  
+  takes x y a b c R
   x = number of config files  
   y = max number of integers per proposal line  
   a = number of proposal lines  
   b, c = vs, ds  
+  R = size of the set that each line will choose from (to guarantee disjoint sets per line, e.g. line 1 takes values in [0,9], line 2 [10, 19] etc. for R = 10)
   Makes x config files where the first line is a b c and then for a lines chooses up to y integers selected randomly from [1, 2*x] to constitue a proposal 
 # comparator.py: 
   takes x y  
